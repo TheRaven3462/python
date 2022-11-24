@@ -13,13 +13,13 @@ def adding_report(items, report_type):
         elif Q.lower() == "q":
             print("It should be quiting!", report_type)
             if report_type == "a":
-                print(*report, sep = "\n")
-                print("Total\n",sum(items))
+                print(*items, sep = "\n")
+                print("Total\n",str(sum(items)))
                 print("Breaking")
                 break
 
             elif report_type == "t":
-                print("Total\n",sum(items))
+                print("Total\n",str(sum(items)))
                 print("Breaking")
                 break
 
